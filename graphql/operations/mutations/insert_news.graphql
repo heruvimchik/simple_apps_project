@@ -1,0 +1,12 @@
+
+mutation InsertNews($title: String!, $content: String!) {
+    insert_news_one(object: {title: $title , content: $content} ){
+        ...News
+    }
+}
+
+#mutation InsertNews($user_id: uuid!, $id: uuid!, $content: String, $title: String,  $created_at: timestamptz, $updated_at: timestamptz) {
+##  insert_news_one(object: {content: $content, id:$id, user_id: $user_id, title: $title, created_at: $created_at, updated_at: $updated_at} ){
+##    ...News
+##  }
+##}

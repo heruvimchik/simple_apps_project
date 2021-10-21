@@ -1,0 +1,15 @@
+fragment User on users {
+  __typename
+  id
+  display_name
+}
+
+fragment News on news{
+  __typename
+  id
+  created_at
+  updated_at
+  title
+  content
+  user_id
+}
